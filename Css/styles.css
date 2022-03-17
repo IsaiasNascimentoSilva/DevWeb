@@ -1,5 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+:root {
+    --color-primary: #4d41c0;
+    --bg-gray: #e8e8e8;
+}
+
 * {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    background-color: var(--bg-gray);
+}
+
+#MENU a, a:hover {
+    text-decoration: none;
+    color: unset;
+}
+
+nav {
+    background-color: var(--color-primary);
+}
+
+#MENU {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+}
+
+#Home {
+    display: inline;
+}
+
+#MENU li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#github {
+    float: right;
 }
